@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* Import de la police Racing Sans One depuis Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
+body {
+  font-family: "Racing Sans One", sans-serif; /* Utilisation de la police Racing Sans One */
+  font-weight: 400; /* Poids de la police */
+  font-style: normal; /* Style de la police */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url("https://4kwallpapers.com/images/walls/thumbs_3t/15283.jpg") center center/cover no-repeat;
+}
+
+/* Formulaire */
+#formulaire {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.1098039216);
+  border-radius: 5px; /* Bordure arrondie */
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px); /* Filtre de flou */
+  padding: 20px;
+  text-align: center;
+}
+#formulaire .form-row {
+  display: flex;
+  flex-wrap: wrap; /* Permettre le retour à la ligne des éléments */
+  align-items: center; /* Alignement vertical des éléments */
+  justify-content: center; /* Alignement horizontal des éléments */
+}
+#formulaire .form-row select {
+  flex-grow: 1; /* Les menus déroulants prennent un espace égal */
+  margin-bottom: 10px; /* Espacement entre les menus déroulants */
+  padding: 10px;
+  border-radius: 4px;
+  width: calc(33.33% - 10px); /* Tous les champs de formulaire ont la même largeur */
+}
+#formulaire .button-container {
+  display: flex;
+  justify-content: space-between; /* Espacement égal entre les boutons */
+  width: 100%; /* Occupe 100% de la largeur du formulaire */
+}
+#formulaire .button-container button {
+  flex-grow: 1; /* Les boutons prennent un espace égal */
+  width: calc(33.33% - 10px); /* Chaque bouton occupe la même largeur que les champs */
+}
+#formulaire button {
+  font-size: 1em;
+  width: calc(50% - 5px); /* Bouton occupe 50% de largeur avec un espacement */
+  margin-top: 5px; /* Espacement entre les menus déroulants et le bouton */
+  padding: 10px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#formulaire button:first-of-type {
+  background-color: #2c8b94;
+}
+#formulaire button:first-of-type:hover {
+  background-color: rgb(188, 218, 68); /* Changement de couleur au survol */
+}
+#formulaire button:last-of-type {
+  margin-left: 5px;
+  background-color: rgba(44, 139, 148, 0.4196078431);
+}
+#formulaire button:last-of-type:hover {
+  background-color: rgb(0, 255, 0); /* Changement de couleur au survol */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#form-section {
+  flex: 1;
+}
+
+#board-section {
+  flex: 1;
+  height: 100%;
+}
+
+#board {
+  background-image: url("images/piste.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-top: -3%;
+  width: 100%; /* Pour occuper 100% de la largeur de la section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ajuster la hauteur pour occuper tout l'espace disponible */
+  z-index: 1;
+}
+
+/* Styles pour #voiture */
+#voiture {
+  position: relative;
+  z-index: 2;
+}
+#voiture img {
+  position: absolute;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Voiture</title>
+</head>
+
+<body class="background-image">
+    <div class="container">
+        <section id="form-section">
+            <form id="formulaire">
+                <div class="form-row">
+                    <select name="cars" id="car-select">
+                        <option value="">--Selectionne ta voiture--</option>
+                        <option value="citadine" data-filename="citadine.png">citadine</option>
+                        <option value="berline" data-filename="berline.png">berline</option>
+                        <option value="familiale" data-filename="familiale.png">familiale</option>
+                    </select>
+                    <br>
+                    <select name="color" id="color-select">
+                        <option value="blue">Bleu</option>
+                        <option value="yellow">Jaune</option>
+                        <option value="red">Rouge</option>
+                    </select>
+                    <br />
+                    <select name="speed" id="speed">
+                        <option value="" disabled>--Selectionne sa vitesse--</option>
+                        <option value="100">100 km/h</option>
+                        <option value="110">110 km/h</option>
+                        <option value="120">120 km/h</option>
+                    </select>
+                    <br>
+                    <div class="button-container">
+                        <button>Ajouter</button>
+                        <button id="course">Go</button>
+                    </div>
+                </div>
+        
+            </form>
+        
+            <div id="podium"></div>
+        </section>
+        <section id="board-section">
+            <div id="board">
+                <div id="voiture" class="voiture-container"></div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
