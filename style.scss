@@ -12,7 +12,43 @@ body {
   background: url("https://4kwallpapers.com/images/walls/thumbs_3t/15283.jpg")
     center center/cover no-repeat;
 }
+h2 {
+  color: rgb(145, 255, 0); /* Couleur de départ */
+  animation: changeColor 3s infinite alternate; /* Animation pour alterner les couleurs pendant 5 secondes en boucle */
+}
 
+@keyframes changeColor {
+  0%, 100% {
+    color: rgb(145, 255, 0); /* Première couleur */
+  }
+  50% {
+    color: #2c8b94; /* Deuxième couleur */
+  }
+}
+
+
+#podium {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #22bcca14;
+  border-radius: 5px; /* Bordure arrondie */
+  backdrop-filter: blur(4px); /* Filtre de flou */
+  padding: 20px;
+  text-align: center;
+
+}
+
+#board {
+  display: block;
+}
+#podium-list {
+color: rgb(255, 255, 255);
+text-shadow: #000000 0 0 8px;
+font-size: small;
+}
 /* Formulaire */
 #formulaire {
   position: absolute;
